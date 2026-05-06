@@ -1,0 +1,88 @@
+/* Arabic-page overrides — RTL flip + Amiri body type
+   Loaded after style.css on index-ar.html */
+
+html { direction: rtl; }
+body { font-family: var(--font-arabic); font-size: 17px; line-height: 1.95; }
+
+h1, h2, h3, p, .lead, cite, dt, dd { text-align: right; }
+.apply h2, .apply p { text-align: center; }
+
+/* Arabic-aware eyebrow — no uppercase, no Latin letter-spacing */
+.eyebrow { font-family: var(--font-arabic); font-size: 14px; letter-spacing: 0; text-transform: none; direction: rtl; text-align: right; font-weight: 700; }
+.hero .eyebrow { font-size: 17px; text-shadow: 0 2px 16px rgba(0,0,0,0.85); }
+
+.bilingual { direction: rtl; }
+.bilingual .ar { direction: rtl; text-align: right; font-size: 28px; }
+
+h1, h2, h3 { font-family: var(--font-arabic); font-weight: 700; line-height: 1.35; }
+h1 { font-size: clamp(2rem, 4.6vw, 3.1rem); line-height: 1.3; }
+h2 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); line-height: 1.35; }
+
+/* HEADER mirror */
+.kit-header .container { flex-direction: row-reverse; }
+.kit-nav { flex-direction: row-reverse; }
+.kit-nav ul { flex-direction: row-reverse; }
+.kit-logo { flex-direction: row-reverse; }
+.kit-logo .lockup .ar, .kit-logo .lockup .en { text-align: right; }
+.kit-logo .lockup .en { font-family: var(--font-arabic); }
+
+/* HERO mirror — gradient flipped, content right-anchored */
+.hero {
+  background-image:
+    linear-gradient(to left, rgba(20,30,24,0.92) 0%, rgba(20,30,24,0.72) 50%, rgba(20,30,24,0.25) 100%),
+    url('assets/hero-background.jpg') !important;
+}
+.hero .content { margin-left: auto; margin-right: 0; text-align: right; }
+.hero h1 { text-shadow: 0 2px 18px rgba(0,0,0,0.7); }
+.hero h1::after { margin-right: 0; margin-left: auto; }
+.hero .lead { text-shadow: 0 2px 12px rgba(0,0,0,0.7); }
+.hero .ar-display { text-align: right; }
+.hero .actions { flex-direction: row-reverse; justify-content: flex-end; }
+.scroll-down svg { transform: scaleX(-1); }
+
+/* Section eyebrow sizing in Arabic */
+.gap-section .eyebrow, .programs-section .eyebrow, .methodology .eyebrow,
+.instructors-section .eyebrow, .testimonials-section .eyebrow, .faq-section .eyebrow { font-size: 16px; }
+
+/* Arabic h3 needs more vertical room than Latin */
+.method-item h3, .program h3, .gap-item .lead-line, .bio h3, .bio .ar-name { line-height: 1.5; margin-bottom: 14px; width: 100%; }
+.method-item p, .program p, .gap-item p, .bio p { width: 100%; }
+.method-item h3 { font-size: 1.5rem; margin-bottom: 16px; }
+
+/* GAP/METHOD/PROGRAMS — items right-aligned */
+.gap-item, .program, .method-item { text-align: right; align-items: flex-end; }
+.gap-item .rule, .program .icon-rule, .program svg { margin-left: auto; margin-right: 0; }
+.method-num { letter-spacing: 0; }
+.level-stepper { flex-direction: row-reverse; }
+.level-arrow { transform: scaleX(-1); }
+
+/* INSTRUCTORS — flip alternation */
+.instructor-row { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); }
+.instructor-row .portrait { order: 2; }
+.instructor-row .bio { order: 1; text-align: right; }
+.instructor-row.reverse { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); }
+.instructor-row.reverse .portrait { order: 1; }
+.instructor-row.reverse .bio { order: 2; }
+.bio .gold-rule { margin-right: 0; margin-left: auto; }
+.bio dl.meta { grid-template-columns: 1fr 110px; }
+
+/* TESTIMONIALS */
+.testimonials-grid { grid-template-columns: 1fr 1.6fr; }
+.tm .qmark { text-align: right; transform: scaleX(-1); display: inline-block; }
+.tm p, .tm cite, .tm .program-tag { text-align: right; }
+
+/* APPLY */
+.apply .stepper { flex-direction: row-reverse; }
+.apply .ar-h2 { text-align: center; }
+.apply p { text-align: center; }
+
+/* FAQ — chevron on the left in RTL */
+.faq-item { padding: 24px 0 24px 36px; }
+.faq-chevron { right: auto; left: 4px; }
+.faq-q, .faq-a { text-align: right; }
+
+/* FOOTER */
+.kit-footer .grid { direction: rtl; }
+.kit-footer h4, .kit-footer p, .kit-footer ul { text-align: right; }
+.kit-footer .brand .lockup { flex-direction: row-reverse; }
+.kit-footer .copyright { flex-direction: row-reverse; }
