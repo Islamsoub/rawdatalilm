@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var items = document.querySelectorAll('.faq-list dt');
 
   items.forEach(function (dt) {
-    dt.addEventListener('click', function () {
+    function toggle() {
       var isOpen = dt.classList.contains('active');
 
       items.forEach(function (item) {
@@ -39,6 +39,15 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!isOpen) {
         dt.classList.add('active');
         dt.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    dt.addEventListener('click', toggle);
+
+    dt.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle();
       }
     });
   });
