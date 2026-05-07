@@ -64,14 +64,18 @@ h2 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); line-height: 1.35; }
 .instructor-row.reverse .portrait { order: 1; }
 .instructor-row.reverse .bio { order: 2; }
 .bio .gold-rule { margin-right: 0; margin-left: auto; }
-.bio dl.meta { grid-template-columns: 1fr 110px; }
 
 /* TESTIMONIALS — grid columns inherited from style.css (1fr 1fr) */
 .tm .qmark { text-align: right; transform: scaleX(-1); display: inline-block; }
 .tm p, .tm cite, .tm .program-tag { text-align: right; }
 
+/* SECTION BODY — Arabic needs more breathing room than Latin */
+.gap-item p, .method-item p, .program p, .bio p { font-size: 17px; line-height: 1.85; }
+
 /* APPLY */
 .apply .stepper { flex-direction: row-reverse; }
+.apply .stepper .step { font-size: 15px; letter-spacing: 0; text-transform: none; color: #fff; }
+.apply .stepper .step .num { font-size: 22px; }
 .apply .ar-h2 { text-align: center; }
 .apply p { text-align: center; }
 
