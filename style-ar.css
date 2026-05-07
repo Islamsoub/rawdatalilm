@@ -29,7 +29,7 @@ h2 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); line-height: 1.35; }
 /* HERO mirror — gradient flipped, content right-anchored */
 .hero {
   background-image:
-    linear-gradient(to left, rgba(20,30,24,0.92) 0%, rgba(20,30,24,0.72) 50%, rgba(20,30,24,0.25) 100%),
+    linear-gradient(to right, rgba(20,30,24,0.25) 0%, rgba(20,30,24,0.72) 50%, rgba(20,30,24,0.92) 100%),
     url('assets/hero-background.jpg') !important;
 }
 .hero .content { margin-left: auto; margin-right: 0; text-align: right; }
