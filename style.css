@@ -137,12 +137,11 @@ h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.35; }
 
 /* TESTIMONIALS */
 .testimonials-section { background: var(--white); padding-block: 128px; }
-.testimonials-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 56px; margin-top: 56px; }
+.testimonials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 56px; align-items: start; }
 .testimonials-grid .col { display: flex; flex-direction: column; gap: 56px; }
 .tm .qmark { font-family: var(--font-serif); color: var(--gold); font-size: 64px; line-height: 0.9; margin-bottom: 8px; }
-.tm .program-tag { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 14px; }
-.tm p { font-family: var(--font-serif); font-style: italic; color: var(--text); font-size: 22px; line-height: 1.5; margin: 0 0 18px; }
-.tm.small p { font-size: 16px; line-height: 1.7; }
+.tm .program-tag { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 14px; padding-top: 14px; border-top: 1px solid rgba(194, 161, 74, 0.3); }
+.tm p { font-family: var(--font-serif); font-style: italic; color: var(--text); font-size: 18px; line-height: 1.65; margin: 0 0 18px; }
 .tm cite { display: block; color: var(--muted); font-size: 14px; font-style: normal; }
 
 /* APPLY */

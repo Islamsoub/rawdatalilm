@@ -66,8 +66,7 @@ h2 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); line-height: 1.35; }
 .bio .gold-rule { margin-right: 0; margin-left: auto; }
 .bio dl.meta { grid-template-columns: 1fr 110px; }
 
-/* TESTIMONIALS */
-.testimonials-grid { grid-template-columns: 1fr 1.6fr; }
+/* TESTIMONIALS — grid columns inherited from style.css (1fr 1fr) */
 .tm .qmark { text-align: right; transform: scaleX(-1); display: inline-block; }
 .tm p, .tm cite, .tm .program-tag { text-align: right; }
 
