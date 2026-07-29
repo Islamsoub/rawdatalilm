@@ -106,6 +106,8 @@ h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.35; }
 .level-pill { font-size: 10.5px; letter-spacing: 0.6px; text-transform: uppercase; color: var(--muted-soft); padding: 4px 10px; border: 1px solid var(--divider); border-radius: 999px; }
 .level-pill.active { color: var(--green); border-color: var(--gold); background: rgba(194,161,74,0.06); }
 .level-arrow { color: var(--muted-soft); font-size: 11px; }
+.level-stepper.choices { flex-wrap: wrap; gap: 6px; }
+.level-stepper.choices .level-pill { color: var(--green); }
 
 /* METHODOLOGY */
 .methodology { background: var(--bg-warm); padding-block: 128px; }
