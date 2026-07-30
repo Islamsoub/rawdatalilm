@@ -37,6 +37,15 @@ h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.35; }
   border: 0; cursor: pointer; font-family: inherit;
 }
 .btn-primary:hover { background: var(--gold-deep); }
+.btn-ghost {
+  display: inline-block; padding: 16px 36px;
+  background: transparent; color: var(--gold-soft);
+  font-weight: 600; font-size: 15px; letter-spacing: 0.5px;
+  text-decoration: none; border-radius: 4px;
+  border: 1px solid var(--gold); cursor: pointer; font-family: inherit;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.btn-ghost:hover { background: var(--gold); color: var(--green); }
 
 .scroll-down { display: inline-flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.85); font-size: 13px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; margin-top: 28px; }
 .scroll-down svg { transition: transform 0.2s ease; }
@@ -180,7 +189,7 @@ h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.35; }
 
 /* FOOTER */
 .kit-footer { background: var(--green); color: #fff; padding-block: 64px 32px; }
-.kit-footer .grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 48px; align-items: start; }
+.kit-footer .grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; align-items: start; }
 .kit-footer .brand { display: flex; flex-direction: column; gap: 14px; }
 .kit-footer .brand .lockup { display: flex; align-items: center; gap: 12px; }
 .kit-footer .brand .lockup img { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--gold); object-fit: cover; }
