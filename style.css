@@ -37,6 +37,7 @@ h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.35; }
   border: 0; cursor: pointer; font-family: inherit;
 }
 .btn-primary:hover { background: var(--gold-deep); }
+.kit-nav .btn-primary { padding: 12px 22px; font-size: 13.5px; }
 .btn-ghost {
   display: inline-block; padding: 16px 36px;
   background: transparent; color: var(--gold-soft);
@@ -76,6 +77,14 @@ h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.35; }
 .lang-switch a + a { border-inline-start: 1px solid var(--divider); }
 .lang-switch a.active + a, .lang-switch a + a.active { border-inline-start-color: var(--green); }
 .lang-switch .lang-ar { font-family: var(--font-arabic); font-size: 16px; padding: 4px 14px 6px; }
+
+.nav-toggle { display: none; width: 44px; height: 44px; padding: 0; background: none; border: 0; cursor: pointer; flex-direction: column; justify-content: center; align-items: center; gap: 5px; }
+.nav-toggle .bar { display: block; width: 22px; height: 2px; background: var(--green); }
+.mobile-nav { display: none; border-top: 1px solid var(--divider); background: rgba(255,255,255,0.98); }
+.mobile-nav a { display: block; padding: 14px 32px; text-decoration: none; color: var(--text); font-family: var(--font-serif); font-size: 17px; border-bottom: 1px solid var(--divider); }
+.mobile-lang { display: flex; }
+.mobile-lang a { flex: 1; text-align: center; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: 0.4px; padding: 14px 0; }
+.mobile-lang a.active { background: var(--green); color: var(--gold-soft); }
 
 /* HERO */
 .hero {
@@ -211,4 +220,19 @@ h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.35; }
   .kit-nav ul { display: none; }
   .bio dl.meta { grid-template-columns: 1fr; gap: 4px 0; }
   .bio dl.meta dt { padding-top: 12px; }
+}
+
+@media (max-width: 600px) {
+  .container { padding-inline: 16px; }
+  .kit-header .container { gap: 8px; padding-block: 12px; }
+  .kit-logo { gap: 8px; }
+  .kit-logo img { width: 30px; height: 30px; }
+  .kit-logo .lockup .en { font-size: 14px; }
+  .kit-logo .lockup .ar { font-size: 12px; margin-bottom: 2px; }
+  .kit-nav { gap: 8px; }
+  .kit-nav .btn-primary { padding: 12px 14px; font-size: 13px; }
+  .lang-switch { display: none; }
+  .nav-toggle { display: flex; }
+  .mobile-nav { display: block; }
+  .mobile-nav a { padding-inline: 16px; }
 }

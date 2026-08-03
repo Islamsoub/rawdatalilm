@@ -25,6 +25,8 @@ h2 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); line-height: 1.35; }
 .kit-logo { flex-direction: row-reverse; }
 .kit-logo .lockup .ar, .kit-logo .lockup .en { text-align: right; }
 .kit-logo .lockup .en { font-family: var(--font-arabic); }
+.kit-nav .btn-primary { font-family: var(--font-arabic); font-size: 14px; }
+.lbl-short { display: none; }
 
 /* HERO mirror — gradient flipped, content right-anchored */
 .hero {
@@ -94,4 +96,11 @@ h2 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); line-height: 1.35; }
   .instructor-row, .instructor-row.reverse { grid-template-columns: 1fr; }
   .instructor-row .portrait, .instructor-row.reverse .portrait { order: 0; }
   .instructor-row .bio, .instructor-row.reverse .bio { order: 0; }
+}
+
+@media (max-width: 600px) {
+  .lbl-full { display: none; }
+  .lbl-short { display: inline; }
+  .mobile-nav a { text-align: right; }
+  .mobile-lang { flex-direction: row-reverse; }
 }
