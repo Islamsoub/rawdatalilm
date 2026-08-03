@@ -155,9 +155,11 @@ No Tailwind
 
 No animation libraries
 
-Files under 400 lines
+No dead code or unused CSS — remove what a change replaces
 ## Lessons Learned
 
 > This section grows over time. After every correction, add a dated note below.
 
 <!-- Example: - 2025-02-22: Don't create new utility scripts before checking execution/ for existing ones -->
+
+- 2026-08-03 — Removed the 400-line file cap. It was a proxy for "no sprawl" and started blocking legitimate content once the site reached four faculty in three languages. Scoped prompts with explicit success conditions do that job better.
