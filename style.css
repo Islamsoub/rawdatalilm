@@ -55,7 +55,7 @@ h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.35; }
 .kit-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.96); border-bottom: 1px solid var(--divider); box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
 .kit-header .container { display: flex; align-items: center; justify-content: space-between; padding-block: 18px; gap: 32px; }
 .kit-logo { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
-.kit-logo img { width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--gold); object-fit: cover; }
+.kit-logo img { width: 38px; height: 38px; object-fit: contain; }
 .kit-logo .lockup { display: flex; flex-direction: column; line-height: 1; white-space: nowrap; }
 .kit-logo .lockup .ar { font-family: var(--font-arabic); color: var(--gold); font-size: 14px; direction: rtl; text-align: left; unicode-bidi: isolate; margin-bottom: 4px; }
 .kit-logo .lockup .en { font-family: var(--font-serif); font-weight: 700; color: var(--green); font-size: 18px; }
@@ -192,7 +192,7 @@ h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.35; }
 .kit-footer .grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; align-items: start; }
 .kit-footer .brand { display: flex; flex-direction: column; gap: 14px; }
 .kit-footer .brand .lockup { display: flex; align-items: center; gap: 12px; }
-.kit-footer .brand .lockup img { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--gold); object-fit: cover; }
+.kit-footer .brand .lockup img { width: 42px; height: 42px; object-fit: contain; }
 .kit-footer .brand .lockup .name-en { font-family: var(--font-serif); font-weight: 700; font-size: 19px; color: #fff; }
 .kit-footer .brand .lockup .name-ar { font-family: var(--font-arabic); color: var(--gold-soft); font-size: 14px; direction: rtl; line-height: 1.2; }
 .kit-footer .brand p { color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.7; margin: 0; max-width: 320px; }
