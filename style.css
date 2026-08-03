@@ -7,7 +7,7 @@
 @import url("colors_and_type.css");
 
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg-warm); color: var(--text); font-family: var(--font-sans); line-height: 1.75; }
+body { margin: 0; background: var(--bg-warm); color: var(--text); font-family: var(--font-sans); line-height: 1.75; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 img { display: block; max-width: 100%; }
 ul, dl { list-style: none; margin: 0; padding: 0; }
 a { color: inherit; }
@@ -209,4 +209,6 @@ h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.35; }
   .instructor-row.reverse .portrait { order: 0; } .instructor-row.reverse .bio { order: 0; }
   .hero .content { padding-block: 64px; }
   .kit-nav ul { display: none; }
+  .bio dl.meta { grid-template-columns: 1fr; gap: 4px 0; }
+  .bio dl.meta dt { padding-top: 12px; }
 }
