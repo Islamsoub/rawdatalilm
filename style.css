@@ -111,7 +111,7 @@ h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.35; }
 .program h3 { color: var(--green); margin-bottom: 6px; font-size: 1.25rem; }
 .program .ar-name { font-family: var(--font-arabic); color: var(--gold); font-size: 16px; direction: rtl; text-align: left; unicode-bidi: isolate; margin-bottom: 12px; }
 .program p { color: var(--muted); margin: 0 0 18px; font-size: 15px; line-height: 1.7; }
-.level-stepper { display: flex; align-items: center; gap: 6px; margin-top: auto; }
+.level-stepper { display: flex; align-items: center; gap: 6px; margin-top: auto; flex-wrap: wrap; }
 .level-pill { font-size: 10.5px; letter-spacing: 0.6px; text-transform: uppercase; color: var(--muted-soft); padding: 4px 10px; border: 1px solid var(--divider); border-radius: 999px; }
 .level-pill.active { color: var(--green); border-color: var(--gold); background: rgba(194,161,74,0.06); }
 .level-arrow { color: var(--muted-soft); font-size: 11px; }

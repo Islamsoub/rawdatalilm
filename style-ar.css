@@ -89,3 +89,9 @@ h2 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); line-height: 1.35; }
 .kit-footer h4, .kit-footer p, .kit-footer ul { text-align: right; }
 .kit-footer .brand .lockup { flex-direction: row-reverse; }
 .kit-footer .copyright { flex-direction: row-reverse; }
+
+@media (max-width: 880px) {
+  .instructor-row, .instructor-row.reverse { grid-template-columns: 1fr; }
+  .instructor-row .portrait, .instructor-row.reverse .portrait { order: 0; }
+  .instructor-row .bio, .instructor-row.reverse .bio { order: 0; }
+}
